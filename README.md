@@ -29,7 +29,7 @@ QBLK relys on the lightNVM infrastructure, but we changed some interface between
 
 3. If you are using FEMU, do the additional tweaks described in [FEMU's github](https://github.com/ucare-uchicago/femu).
 
-4. Build the kernel. Don't forget to enable lightNVM and disable pblk.
+4. Build the kernel. Don't forget to enable lightNVM(NVM=y) and disable pblk(NVM_PBLK=n). Restart and run the new kernel.
 
 5. Build QBLK.
 
