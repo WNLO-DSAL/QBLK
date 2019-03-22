@@ -13,7 +13,7 @@ By using 4 techniques:
 
 QBLK can achieve better performance than PBLK under heavy workloads.
 
-For more information, please refer to our paper "QBLK: Towards Fully Exploiting the Parallelism of Open-Channel SSDs" in [DATE 2019]("https://date-conference.com/" https://date-conference.com/).
+For more information, please refer to our paper "QBLK: Towards Fully Exploiting the Parallelism of Open-Channel SSDs" in [DATE 2019](https://date-conference.com/).
 
 ## Usage
 
@@ -21,7 +21,7 @@ For more information, please refer to our paper "QBLK: Towards Fully Exploiting 
 
 If you're like me who doesn't have an Open Channel SSD hardware, you can use [FEMU](https://github.com/ucare-uchicago/femu) to emulate an Open Channel SSD for your QEMU virtual machine.
 
-./scripts/qblk/femu/startFemu.sh contains an example script to run FEMU.
+`./scripts/qblk/femu/startFemu.sh` contains an example script to run FEMU.
 
 2. On the server which has an Open Channel SSD or emulated OCSSD, download the linux kernel source version 4.16.0. Copy our code into the corresponding folder.
 
@@ -42,7 +42,7 @@ QBLK relys on the lightNVM infrastructure, but we changed some interface between
 
 7. Run benchmark. You may want to use fio to measure QBLK's performance.
 
-./scripts/qblk/fio/fioqblkdev_randwrite contains an example fio job file to test QBLK.
+`./scripts/qblk/fio/fioqblkdev_randwrite` contains an example fio job file to test QBLK.
 
 You can use the following script to run fio under 32 threads.
 
