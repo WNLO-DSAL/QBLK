@@ -1,6 +1,6 @@
-# QBLK
+# QBLK/QBLKe
 
-## Introduction
+## QBLK Introduction
 
 QBLK is a device driver for Open Channel SSDs based on linux kernel 4.16.0. QBLK is modified from pblk, which is an Open Channel SSD device driver in linux kernel.
 
@@ -11,9 +11,18 @@ By using 4 techniques:
 * Lock-free Address Mapping
 * Fine-grained Draining
 
-QBLK can achieve better performance than PBLK under heavy workloads.
+QBLK can achieve good performance under heavy-threaded workloads.
 
 For more information, please refer to our paper "QBLK: Towards Fully Exploiting the Parallelism of Open-Channel SSDs" in [DATE 2019](https://date-conference.com/).
+
+```
+Qin, Hongwei, et al. "QBLK: Towards Fully Exploiting the Parallelism of Open-Channel SSDs." 2019 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2019.
+```
+
+## QBLKe introduction
+
+QBLK express (QBLKe) is optimized from QBLK. QBLKe uses a technique called load adaptive ring buffer to enhance the driver's performance when there are only a small number of IO threads.
+
 
 ## Usage
 
@@ -49,6 +58,30 @@ You can use the following script to run fio under 32 threads.
 ```
 fio -numjobs=32 fioqblkdev_randwrite
 ```
+
+**To build and install QBLKe**
+
+The same with QBLK from step 1-4
+
+5. Build QBLKe
+
+```
+# cd drivers/QBLKe
+# make
+```
+6. Run QBLKe
+
+```
+./install
+```
+
+7. An example script to mount XFS
+
+```
+./prepareFSTest
+```
+
+Enjoy :)
 
 ## ToDoList
 
