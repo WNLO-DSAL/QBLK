@@ -1,4 +1,4 @@
-# QBLK/QBLKe
+# QBLK
 
 ## QBLK Introduction
 
