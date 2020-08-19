@@ -20,7 +20,7 @@ KDIR ?= /lib/modules/`uname -r`/build
 
 default:
 	$(MAKE) -C $(KDIR) M=$$PWD
-	rm -rf modules.order .tmp_versions *.mod* *.o *.o.cmd .*.cmd
+	rm -rf modules.order Module.symvers .tmp_versions *.mod* *.o *.o.cmd .*.cmd
 clean:
 	rm -rf modules.order Module.symvers .tmp_versions *.ko* *.mod* *.o *.o.cmd .*.cmd 
 
