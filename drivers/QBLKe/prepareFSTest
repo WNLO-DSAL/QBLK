@@ -1,4 +1,0 @@
-#!/bin/bash
-mkfs.xfs /dev/qblkdev
-mount -o discard /dev/qblkdev /mnt/qhw
-

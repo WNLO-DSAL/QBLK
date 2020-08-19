@@ -59,29 +59,6 @@ fio -numjobs=32 fioqblkdev_randwrite
 
 QBLK express (QBLKe) is optimized from QBLK. QBLKe uses a technique called load adaptive ring buffer to enhance the driver's performance when there are only a small number of IO threads.
 
-
-**To build and install QBLKe**
-
-The same with QBLK from step 1-4
-
-5. Build QBLKe
-
-```
-# cd drivers/QBLKe
-# make
-```
-6. Run QBLKe
-
-```
-./install
-```
-
-7. An example script to mount XFS
-
-```
-./prepareFSTest
-```
-
 Enjoy :)
 
 ## ToDoList

@@ -1,4 +1,0 @@
-#!/bin/bash
-nvme lnvm remove -n qblkdev
-#sleep 1
-rmmod qblk
