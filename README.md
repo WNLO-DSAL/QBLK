@@ -55,10 +55,6 @@ You can use the following script to run fio under 32 threads.
 fio -numjobs=32 fioqblkdev_randwrite
 ```
 
-## QBLKe introduction
-
-QBLK express (QBLKe) is optimized from QBLK. QBLKe uses a technique called load adaptive ring buffer to enhance the driver's performance when there are only a small number of IO threads.
-
 Enjoy :)
 
 ## ToDoList
