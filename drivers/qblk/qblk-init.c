@@ -669,7 +669,7 @@ add_emeta_page:
 	meta->emeta_bb = geo->nr_luns > i ? geo->nr_luns - i : 0;
 
 	meta->min_blk_line = 1;
-	if (geo->all_luns > 1)
+	if (geo->num_lun > 1)
 		meta->min_blk_line += DIV_ROUND_UP(meta->smeta_sec +
 					meta->emeta_sec[0], geo->sec_per_chk);
 	pr_notice("%s, meta->min_blk_line = %u\n",
