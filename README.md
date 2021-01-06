@@ -1,5 +1,9 @@
 # QBLK
 
+## NEW VERSION AVAILABLE
+
+QBLK has evolved to QBLKe. Please checkout [https://github.com/WNLO-DSAL/QBLKe](https://github.com/WNLO-DSAL/QBLKe).
+
 ## QBLK Introduction
 
 QBLK is a device driver for Open Channel SSDs based on linux kernel 4.16.0. QBLK is modified from pblk, which is an Open Channel SSD device driver in linux kernel.
